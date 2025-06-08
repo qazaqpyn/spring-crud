@@ -3,6 +3,7 @@ package com.example.nobsv2.nobsv2.product.service;
 import java.util.Optional;
 import java.util.UUID;
 
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,7 @@ public class GetProductService implements Query<UUID, ProductDTO> {
     }
 
     @Override
+    @Cacheable("productCache")
     public ResponseEntity<ProductDTO> execute(UUID id) {
         Optional<Product> product = productRepository.findById(id);
         if (product.isPresent())

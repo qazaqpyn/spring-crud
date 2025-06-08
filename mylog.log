@@ -1,0 +1,43 @@
+2025-06-08T00:13:08.815+08:00  INFO 25681 --- [nobsv2] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-08T00:13:08.824+08:00  INFO 25681 --- [nobsv2] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-08T00:13:08.828+08:00  INFO 25681 --- [nobsv2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-08T00:13:08.832+08:00  INFO 25681 --- [nobsv2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-08T00:13:08.833+08:00  INFO 25681 --- [nobsv2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-08T00:13:09.789+08:00  INFO 26863 --- [nobsv2] [main] c.e.nobsv2.nobsv2.Nobsv2Application      : Starting Nobsv2Application using Java 21.0.1 with PID 26863 (/Users/mac/Desktop/java/youtube/nobsv2/target/classes started by mac in /Users/mac/Desktop/java/youtube)
+2025-06-08T00:13:09.790+08:00  INFO 26863 --- [nobsv2] [main] c.e.nobsv2.nobsv2.Nobsv2Application      : No active profile set, falling back to 1 default profile: "default"
+2025-06-08T00:13:10.151+08:00  INFO 26863 --- [nobsv2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-08T00:13:10.185+08:00  INFO 26863 --- [nobsv2] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2025-06-08T00:13:10.457+08:00  INFO 26863 --- [nobsv2] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-08T00:13:10.464+08:00  INFO 26863 --- [nobsv2] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-08T00:13:10.465+08:00  INFO 26863 --- [nobsv2] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-08T00:13:10.496+08:00  INFO 26863 --- [nobsv2] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-08T00:13:10.496+08:00  INFO 26863 --- [nobsv2] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 679 ms
+2025-06-08T00:13:10.574+08:00  INFO 26863 --- [nobsv2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-08T00:13:10.692+08:00  INFO 26863 --- [nobsv2] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d318e91
+2025-06-08T00:13:10.693+08:00  INFO 26863 --- [nobsv2] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-08T00:13:10.723+08:00  INFO 26863 --- [nobsv2] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-08T00:13:10.747+08:00  INFO 26863 --- [nobsv2] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-08T00:13:10.761+08:00  INFO 26863 --- [nobsv2] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-08T00:13:10.877+08:00  INFO 26863 --- [nobsv2] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-08T00:13:10.932+08:00  INFO 26863 --- [nobsv2] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-08T00:13:11.299+08:00  INFO 26863 --- [nobsv2] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-08T00:13:11.301+08:00  INFO 26863 --- [nobsv2] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-08T00:13:11.456+08:00  INFO 26863 --- [nobsv2] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-08T00:13:11.826+08:00  WARN 26863 --- [nobsv2] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-08T00:13:12.022+08:00  INFO 26863 --- [nobsv2] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-08T00:13:12.028+08:00  INFO 26863 --- [nobsv2] [main] c.e.nobsv2.nobsv2.Nobsv2Application      : Started Nobsv2Application in 2.556 seconds (process running for 2.757)
+2025-06-08T00:13:33.984+08:00  INFO 26863 --- [nobsv2] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-08T00:13:33.985+08:00  INFO 26863 --- [nobsv2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-08T00:13:33.986+08:00  INFO 26863 --- [nobsv2] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-08T00:13:41.039+08:00  INFO 26863 --- [nobsv2] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-08T00:13:41.049+08:00  INFO 26863 --- [nobsv2] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-08T00:13:41.053+08:00  INFO 26863 --- [nobsv2] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-08T00:13:41.056+08:00  INFO 26863 --- [nobsv2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-08T00:13:41.059+08:00  INFO 26863 --- [nobsv2] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
