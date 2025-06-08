@@ -54,10 +54,11 @@ public class SecurityConfiguration {
         return httpSecurity
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authorize -> {
-                    authorize.requestMatchers("/login").permitAll();
-                    authorize.requestMatchers("/user/create").permitAll();
+                    authorize.anyRequest().permitAll();
+                    // authorize.requestMatchers("/login").permitAll();
+                    // authorize.requestMatchers("/user/create").permitAll();
 
-                    authorize.anyRequest().authenticated();
+                    // authorize.anyRequest().authenticated();
 
                     // authorize.requestMatchers("/open").permitAll();
                     // authorize.requestMatchers("/closed").authenticated();
